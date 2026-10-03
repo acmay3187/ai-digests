@@ -118,9 +118,9 @@ Body:
 ## Delivery
 1. **Save to the repo.** Write the complete HTML email (a full `<html>` document) to `digests/<weekId>/research.html`, overwriting any earlier version. Then:
    ```bash
-   git add digests && git commit -m "Research digest: <weekId>" && git pull --rebase origin main && git push origin main
+   git add digests && git commit -m "Research digest: <weekId>"
    ```
-   Retry the pull and push once if the push is rejected. If the push still fails, report it and carry on.
+   Then publish using the **Publishing** commands in CLAUDE.md (push to `main`, or fall back to a `claude/…` branch that the repo's Action merges). If publishing fails, report it and carry on.
 2. **Gmail draft.** Create a Gmail draft to `DIGEST_RECIPIENT` with the subject and HTML body. Do NOT send.
 
 ## Success criteria

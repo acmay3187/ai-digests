@@ -101,8 +101,8 @@ The subject prefix must stay exactly `LLM Innovations Digest`, because the archi
 
 1. **Save to the repo.** Write the complete HTML email (a full `<html>` document) to `digests/<weekId>/innovations.html`, overwriting any earlier version. Then:
    ```bash
-   git add digests && git commit -m "Innovations digest: <weekId>" && git pull --rebase origin main && git push origin main
+   git add digests && git commit -m "Innovations digest: <weekId>"
    ```
-   Retry the pull and push once if the push is rejected. If the push still fails, report it and carry on.
+   Then publish using the **Publishing** commands in CLAUDE.md (push to `main`, or fall back to a `claude/…` branch that the repo's Action merges). If publishing fails, report it and carry on.
 2. **Gmail draft.** Create a Gmail draft (do not send) addressed to `DIGEST_RECIPIENT`. Note any sourcing limitations at the end of the run summary.
 3. End with one line: items per section, file path, push status, draft status.

@@ -47,9 +47,9 @@ Also include AI-related posts from similar newsletters Alex subscribes to.
    - End with a short note listing any must-include newsletters that had no posts this week.
 4. **Save to the repo.** Write the complete HTML email (a full `<html>` document) to `digests/<weekId>/newsletters.html`, overwriting any earlier version. Then:
    ```bash
-   git add digests && git commit -m "Newsletter digest: <weekId>" && git pull --rebase origin main && git push origin main
+   git add digests && git commit -m "Newsletter digest: <weekId>"
    ```
-   Retry the pull and push once if the push is rejected. If the push still fails, report it and carry on.
+   Then publish using the **Publishing** commands in CLAUDE.md (push to `main`, or fall back to a `claude/…` branch that the repo's Action merges). If publishing fails, report it and carry on.
 5. **Gmail draft.** Create a Gmail draft (do not send) addressed to `DIGEST_RECIPIENT`. Use the subject `Weekly AI Newsletter Digest — <week ending date, e.g. Oct 2, 2026>` and the HTML body. The subject prefix must stay exactly `Weekly AI Newsletter Digest`, because the archive skill searches for it.
 6. If no AI newsletters arrived in the past 7 days, save and draft a short note saying so instead of an empty digest. Use the same file path and subject.
 

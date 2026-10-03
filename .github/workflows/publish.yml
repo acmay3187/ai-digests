@@ -1,0 +1,65 @@
+name: Merge routine branches and publish archive
+
+# Cloud routines may only be allowed to push claude/* branches.
+# Any such push is merged into main (approved: no review), then the site is deployed to GitHub Pages.
+on:
+  push:
+    branches: [main, "claude/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  merge:
+    if: startsWith(github.ref, 'refs/heads/claude/')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Merge branch into main
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin "$BRANCH"
+          git merge --no-edit "origin/$BRANCH" -m "Merge $BRANCH into main"
+          git push origin main
+          git push origin --delete "$BRANCH" || true
+      - name: Trigger a deploy from main
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run publish.yml --ref main --repo "${{ github.repository }}"
+
+  deploy:
+    # Pushes made with GITHUB_TOKEN don't start new runs, so the merge job dispatches this on main.
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Assemble site
+        run: |
+          mkdir _site
+          cp index.html .nojekyll _site/
+          cp -r digests _site/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -10,7 +10,7 @@ Add a "week" entry to the AI digest archive at `index.html` in the root of this 
 The archive is a sleek dark-mode HTML page that groups three weekly digests by week, newest first. Skills 1–3 (`ai-newsletter-digest`, `ai-labs-research-digest`, `ai-innovations-digest`) ran earlier today. Your job is to take their output and make it the top entry of the archive.
 
 ## Setup
-- Run `git pull --rebase origin main` first, so you have the latest digests and archive.
+- Run `git pull --rebase origin main` first, so you have the latest digests and archive. If skills 1–3 pushed through `claude/…` branches, their files reach `main` about a minute after each push.
 - **Dates:** cloud machines run in UTC, and this skill is scheduled for 10:30pm New York time, which is already Saturday in UTC. Always compute dates in New York time with `TZ=America/New_York date` (see CLAUDE.md for a python fallback).
 
 ## Source data (in priority order)
@@ -220,9 +220,9 @@ Check the edited file with Grep or a short python script:
 ## Step 8 — Publish and report
 
 ```bash
-git add index.html && git commit -m "Archive: week of {{weekTitle}}" && git pull --rebase origin main && git push origin main
+git add index.html && git commit -m "Archive: week of {{weekTitle}}"
 ```
-Retry the pull and push once if the push is rejected. GitHub Pages redeploys within about a minute of the push.
+Then publish using the **Publishing** commands in CLAUDE.md. If the direct push to `main` is refused, the fallback `claude/…` branch is merged into `main` by the repo's Action. Either way, the live page redeploys within a minute or two.
 
 Finish with one line like:
 "Appended week of {{weekTitle}}: {{N}} newsletter posts ({{M}} publications), {{N}} research papers ({{M}} labs), {{N}} innovations ({{M}} categories). Sources: repo/Gmail per digest. Live at https://acmay3187.github.io/ai-digests/"
