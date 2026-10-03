@@ -505,6 +505,41 @@
     .jump-row { grid-template-columns: 1fr; }
   }
 
+  /* Phone: sticky header with a horizontally scrolling week strip */
+  @media (max-width: 640px) {
+    .sidebar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      padding: 12px 16px 10px 16px;
+    }
+    .brand { padding: 0 0 8px 0; margin-bottom: 8px; }
+    .brand-sub, .nav-label, .sidebar-footer { display: none; }
+    .week-list {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      scroll-snap-type: x proximity;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      margin: 0 -16px;
+      padding: 0 16px 2px 16px;
+    }
+    .week-list::-webkit-scrollbar { display: none; }
+    .week-list li { flex: 0 0 auto; scroll-snap-align: start; }
+    .week-item {
+      margin: 0;
+      padding: 7px 12px;
+      white-space: nowrap;
+      border-color: var(--border);
+    }
+    .week-item.active::before { display: none; }
+    .week-item.active { border-color: var(--accent); }
+    .week-item-meta { display: none; }
+    .main { padding: 20px 16px 60px 16px; }
+    .week, .digest { scroll-margin-top: 110px; }
+  }
+
   /* Hide non-active weeks */
   .week[data-week-active="false"] { display: none; }
 
