@@ -23,7 +23,7 @@ For each of the three digest types, `newsletters`, `research` and `innovations`:
    - research: `subject:"AI Labs Research Digest" newer_than:2d`
    - innovations: `subject:"LLM Innovations Digest" newer_than:2d`
 
-   If nothing turns up, also try the same query with `in:drafts`, because the digests are saved as drafts. Then call `get_thread` with full content to get the body. Use the HTML body if there is one, since it keeps all links and structure. Otherwise use the plaintext body.
+   The Gmail connector leaves drafts out of search results unless the query includes `in:draft`. So if the plain query returns nothing, run it again with `in:draft` added, because the digests start life as drafts. Then call `get_thread` with full content to get the body. Use the HTML body if there is one, since it keeps all links and structure. Otherwise use the plaintext body.
 
 If both sources come up empty for a digest, it didn't run this week. Carry on with the others and note the gap (see Step 5).
 
