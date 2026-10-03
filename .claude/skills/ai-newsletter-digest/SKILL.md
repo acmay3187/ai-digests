@@ -51,6 +51,7 @@ Also include AI-related posts from similar newsletters Alex subscribes to.
    ```
    Then publish using the **Publishing** commands in CLAUDE.md (push to `main`, or fall back to a `claude/…` branch that the repo's Action merges). If publishing fails, report it and carry on.
 5. **Gmail draft.** Create a Gmail draft (do not send) addressed to `DIGEST_RECIPIENT`. Use the subject `Weekly AI Newsletter Digest — <week ending date, e.g. Oct 2, 2026>` and the HTML body. The subject prefix must stay exactly `Weekly AI Newsletter Digest`, because the archive skill searches for it.
+   **Re-runs:** before creating the draft, use the Gmail connector's `list_drafts` to look for an existing draft with the same subject. If one exists, update it with `update_draft` instead of creating a second one.
 6. If no AI newsletters arrived in the past 7 days, save and draft a short note saying so instead of an empty digest. Use the same file path and subject.
 
 ## Report

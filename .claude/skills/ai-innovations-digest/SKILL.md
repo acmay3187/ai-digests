@@ -105,4 +105,5 @@ The subject prefix must stay exactly `LLM Innovations Digest`, because the archi
    ```
    Then publish using the **Publishing** commands in CLAUDE.md (push to `main`, or fall back to a `claude/…` branch that the repo's Action merges). If publishing fails, report it and carry on.
 2. **Gmail draft.** Create a Gmail draft (do not send) addressed to `DIGEST_RECIPIENT`. Note any sourcing limitations at the end of the run summary.
+   **Re-runs:** before creating the draft, use the Gmail connector's `list_drafts` to look for an existing draft with the same subject. If one exists, update it with `update_draft` instead of creating a second one.
 3. End with one line: items per section, file path, push status, draft status.
