@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Weekly AI Newsletter Digest — Oct 9, 2026</title></head>
+<body style="margin:0;padding:24px;background:#ffffff;font-family:Georgia,'Times New Roman',serif;color:#1a1a1a;line-height:1.55;">
+<div style="max-width:680px;margin:0 auto;">
+<h1 style="font-size:26px;margin:0 0 4px;">Weekly AI Newsletter Digest</h1>
+<p style="margin:0 0 18px;color:#666;font-size:14px;">Week ending Oct 9, 2026 · 6 posts across 4 newsletters received in the past 7 days. Newsletters listed alphabetically; posts within each section are oldest first.</p>
+<p style="margin:0 0 24px;">Multi-agent "swarms" were the week's biggest theme: whether they're a new scaling law, why they fall into groupthink, and what the Hugging Face incident says about their risks. Other posts covered AI's sudden rise as a political issue, a fight over the cyber risk of open-weight models, TypeSafe's new "Jev" decision model, and general-purpose LLMs driving a real car.</p>
+
+<h2 style="font-size:20px;border-bottom:1px solid #ddd;padding-bottom:4px;margin:28px 0 12px;">Interconnects (Nathan Lambert)</h2>
+<p style="margin:0 0 6px;"><strong>The Cyber Risk Discourse is Broken — Oct 6, 2026</strong></p>
+<p style="margin:0 0 6px;">Lambert argues that the push to ban open-weight models over cyber risk, driven by frontier lab leaders, the national security community, and classified briefings, ignores trade-offs. He criticizes Anthropic's GLM-5.3 report for not asking what a ban would actually achieve, or why Chinese labs judge these models safe to release. Public evidence so far ties most AI-enabled cyberattacks to closed models. If open weights must be banned for cyber reasons, he says, the same logic would ban public frontier APIs. He also sketches how Chinese labs assess risk, and argues that even an open-weight Claude Mythos would have sped up existing harms rather than created new ones.</p>
+<p style="margin:0 0 20px;"><a href="https://www.interconnects.ai/p/the-cyber-risk-discourse-is-broken" style="color:#1a5fb4;">Read full post</a></p>
+
+<h2 style="font-size:20px;border-bottom:1px solid #ddd;padding-bottom:4px;margin:28px 0 12px;">Jasmine Sun</h2>
+<p style="margin:0 0 6px;"><strong>five notes on AI &amp; politics — Oct 7, 2026</strong></p>
+<p style="margin:0 0 6px;">Sun calls September 2026 the month AI safety went mainstream, citing the Coxon tweet, Bernie Sanders's campaign, the Hugging Face hack, and polls showing 77% of Americans want to slow or stop AI development. She poses five open questions. Will data-center opponents back a broader pause? Will AI users turn into advocates, as Uber and Airbnb users did? Will AI actually swing votes? Only 8% of voters rank it a top issue, though an "AI pause" could become a 2028 litmus test. Will Trump's "HOAX" posts polarize the issue? And can public opinion beat the administration's focus on the stock market? Her answer: probably not until a worse warning shot arrives.</p>
+<p style="margin:0 0 20px;"><a href="https://jasmi.news/p/ai-polls" style="color:#1a5fb4;">Read full post</a></p>
+
+<h2 style="font-size:20px;border-bottom:1px solid #ddd;padding-bottom:4px;margin:28px 0 12px;">Understanding AI</h2>
+<p style="margin:0 0 6px;"><strong>Why agent swarms could be the next "scaling law" — Oct 5, 2026</strong></p>
+<p style="margin:0 0 6px;">In his first post for the newsletter, Dan Kagan-Kans explains how OpenAI now trains models alongside other agents, behind both the Hugging Face attack and the 10,000-agent Navier-Stokes result. He asks whether swarms are a new way to turn compute into capability. Evidence so far, including the Claude Opus 5.5 system card and Toby Ord's "stepping on toes" estimate of 0.5–0.7, suggests swarms mostly buy speed, with diminishing returns. The post also covers the risks of groupthink and correlated failures, Anthropic's move to give each agent an individual identity, and Noam Brown's view that a single tightly cooperative collective is easier to align.</p>
+<p style="margin:0 0 20px;"><a href="https://www.understandingai.org/p/why-agent-swarms-could-be-the-next" style="color:#1a5fb4;">Read full post</a></p>
+<p style="margin:0 0 6px;"><strong>Introducing Dan Kagan-Kans — Oct 5, 2026</strong></p>
+<p style="margin:0 0 6px;">Timothy B. Lee introduces the newsletter's new writer, a former managing editor of Mosaic who turned to AI journalism. His past work includes "The left is missing out on AI" for Transformer, a rare interview with Hans Moravec, and an analysis of the data-center backlash. Kagan-Kans is funded by a Tarbell Fellowship, and Lee discloses Tarbell's funders, which include x-risk-focused philanthropies, while noting that Tarbell has never tried to influence their coverage.</p>
+<p style="margin:0 0 20px;"><a href="https://www.understandingai.org/p/introducing-dan-kagan-kans" style="color:#1a5fb4;">Read full post</a></p>
+<p style="margin:0 0 6px;"><strong>Understanding Jev, the new model everyone is talking about — Oct 8, 2026</strong></p>
+<p style="margin:0 0 6px;">TypeSafe AI's Jev went viral by giving up free-form text. It answers yes/no, multiple-choice, or rating questions with calibrated probabilities. That makes it far cheaper and faster than an LLM used as a judge, while still working across topics without fine-tuning, and its output drops straight into code. The post covers uses such as spam filtering, cheap agent monitoring, and fast computer use, along with copycats from OpenAI, Cloudflare, and Amazon. TypeSafe likely post-trains an existing LLM with "RLCD" on synthetic data. The CEO calls it the "bitterest lesson": choosing what to optimize for matters most.</p>
+<p style="margin:0 0 20px;"><a href="https://www.understandingai.org/p/understanding-jev-the-new-model-everyone" style="color:#1a5fb4;">Read full post</a></p>
+
+<h2 style="font-size:20px;border-bottom:1px solid #ddd;padding-bottom:4px;margin:28px 0 12px;">WIRED AI Lab (Will Knight)</h2>
+<p style="margin:0 0 6px;"><strong>AI models are driving real cars now — Oct 7, 2026</strong></p>
+<p style="margin:0 0 6px;">Three Axiom engineers wired GPT-6 Astra to cameras and the steering of a Toyota Corolla, and it slowly drove them through an In-N-Out drive-thru. On their new DrivingBench parking-lot course, only Astra finished, while Claude Fable 5.1 got 45% of the way and Grok 11%. Knight presents this as evidence that physical reasoning is emerging in general models, alongside the new Humanity's Sixth Sense benchmark from Scale AI and Elorian. The roundup also covers agents that silently go along with a group's wrong answer, a self-improving robot-learning loop, and attacks on LLM-guided drone swarms.</p>
+<p style="margin:0 0 20px;"><a href="https://www.wired.com/story/ai-is-driving-cars-now-oh-boy" style="color:#1a5fb4;">Read full post</a></p>
+
+<hr style="border:none;border-top:1px solid #ddd;margin:28px 0 12px;">
+<p style="margin:0;font-size:14px;color:#666;"><strong>No posts this week from:</strong> AI Snake Oil, AI as Normal Technology, Rising Tide, Hyperdimensional (Dean Ball), One Useful Thing, The AI Policy Newsletter (Alisar Mustafa), Arachne (Nathan Witkin). Already covered last week: "Tesla is finally scaling up driverless robotaxi service" (Understanding AI, Oct 2) and "Introducing Trillium Labs" (Interconnects, Oct 2). Not included: a Substack live-video notice, "What is public AI? (with Akash Kapur)" (Oct 8).</p>
+</div>
+</body>
+</html>
