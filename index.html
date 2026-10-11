@@ -567,7 +567,13 @@
     <div class="nav-label">Weeks</div>
     <ul class="week-list" id="weekList">
       <li>
-        <a class="week-item active" data-week-target="2026-10-02" href="#week-2026-10-02">
+        <a class="week-item active" data-week-target="2026-10-09" href="#week-2026-10-09">
+          <span class="week-item-date">October 5 – 9, 2026</span>
+          <span class="week-item-meta">3 digests · 6 newsletters · 10 papers</span>
+        </a>
+      </li>
+      <li>
+        <a class="week-item" data-week-target="2026-10-02" href="#week-2026-10-02">
           <span class="week-item-date">September 28 – October 2, 2026</span>
           <span class="week-item-meta">3 digests · 9 newsletters · 10 papers</span>
         </a>
@@ -714,8 +720,323 @@
   <!-- ============= MAIN ============= -->
   <main class="main">
 
+    <!-- ====== WEEK: 2026-10-09 ====== -->
+    <section class="week" data-week="2026-10-09" data-week-active="true" id="week-2026-10-09">
+
+      <header class="week-header">
+        <div class="week-eyebrow">Week of</div>
+        <h2 class="week-title">October 5 – 9, 2026</h2>
+        <p class="week-summary">Agent swarms and non-composing safety were the week's thread. Understanding AI asked whether swarms are the next scaling law, while new papers showed CaMeL-style injection defenses leaking when agents call each other and shared memory getting polluted across agents. Labs answered with explicit boundaries: Anthropic's free OSS vulnerability scanner, tiered Cyber Verification access and a usage policy for physical agents, OpenAI's EU text watermarking (textGrain), and UK AISI's containment standard and Transect transcript tooling. The newsletters also covered AI's arrival as a mainstream political issue, the open-weight cyber-risk fight, TypeSafe's Jev decision model and LLMs driving a real car.</p>
+
+        <div class="jump-row">
+          <a class="jump-link newsletters" href="#digest-newsletters-2026-10-09">
+            <div class="jump-icon">&#9993;&#65039;</div>
+            <div class="jump-content">
+              <div class="jump-name">Newsletters</div>
+              <div class="jump-meta">6 posts · 4 publications</div>
+            </div>
+            <div class="jump-arrow">↗</div>
+          </a>
+          <a class="jump-link research" href="#digest-research-2026-10-09">
+            <div class="jump-icon">&#128218;</div>
+            <div class="jump-content">
+              <div class="jump-name">AI Labs Research</div>
+              <div class="jump-meta">10 papers · 4 labs</div>
+            </div>
+            <div class="jump-arrow">↗</div>
+          </a>
+          <a class="jump-link innovations" href="#digest-innovations-2026-10-09">
+            <div class="jump-icon">&#9889;</div>
+            <div class="jump-content">
+              <div class="jump-name">LLM Innovations</div>
+              <div class="jump-meta">12 items · 4 categories</div>
+            </div>
+            <div class="jump-arrow">↗</div>
+          </a>
+        </div>
+      </header>
+
+      <!-- ====== NEWSLETTER DIGEST ====== -->
+      <section class="digest newsletters" id="digest-newsletters-2026-10-09">
+        <header class="digest-header">
+          <div class="digest-icon">&#9993;&#65039;</div>
+          <div class="digest-titles">
+            <h3 class="digest-title">Weekly AI Newsletter Digest</h3>
+            <div class="digest-meta">4 publications · 6 posts &nbsp;·&nbsp; Friday, Oct 9 · 4:09 PM</div>
+          </div>
+        </header>
+        <div class="digest-body">
+          <p class="intro-block">Multi-agent "swarms" were the week's biggest theme: whether they're a new scaling law, why they fall into groupthink, and what the Hugging Face incident says about their risks. Other posts covered AI's sudden rise as a political issue, a fight over the cyber risk of open-weight models, TypeSafe's new "Jev" decision model, and general-purpose LLMs driving a real car.</p>
+
+          <div class="pub-name">Interconnects (Nathan Lambert)</div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://www.interconnects.ai/p/the-cyber-risk-discourse-is-broken" target="_blank" rel="noopener">The Cyber Risk Discourse is Broken</a></span>
+              <span class="item-date">Oct 6, 2026</span>
+            </div>
+            <p class="item-synopsis">Lambert argues that the push to ban open-weight models over cyber risk, driven by frontier lab leaders, the national security community, and classified briefings, ignores trade-offs. He criticizes Anthropic's GLM-5.3 report for not asking what a ban would actually achieve, or why Chinese labs judge these models safe to release. Public evidence so far ties most AI-enabled cyberattacks to closed models. If open weights must be banned for cyber reasons, he says, the same logic would ban public frontier APIs. He also sketches how Chinese labs assess risk, and argues that even an open-weight Claude Mythos would have sped up existing harms rather than created new ones.</p>
+          </div>
+
+          <div class="pub-name">Jasmine Sun</div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://jasmi.news/p/ai-polls" target="_blank" rel="noopener">five notes on AI &amp; politics</a></span>
+              <span class="item-date">Oct 7, 2026</span>
+            </div>
+            <p class="item-synopsis">Sun calls September 2026 the month AI safety went mainstream, citing the Coxon tweet, Bernie Sanders's campaign, the Hugging Face hack, and polls showing 77% of Americans want to slow or stop AI development. She poses five open questions. Will data-center opponents back a broader pause? Will AI users turn into advocates, as Uber and Airbnb users did? Will AI actually swing votes? Only 8% of voters rank it a top issue, though an "AI pause" could become a 2028 litmus test. Will Trump's "HOAX" posts polarize the issue? And can public opinion beat the administration's focus on the stock market? Her answer: probably not until a worse warning shot arrives.</p>
+          </div>
+
+          <div class="pub-name">Understanding AI</div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://www.understandingai.org/p/why-agent-swarms-could-be-the-next" target="_blank" rel="noopener">Why agent swarms could be the next "scaling law"</a></span>
+              <span class="item-date">Oct 5, 2026</span>
+            </div>
+            <p class="item-synopsis">In his first post for the newsletter, Dan Kagan-Kans explains how OpenAI now trains models alongside other agents, behind both the Hugging Face attack and the 10,000-agent Navier-Stokes result. He asks whether swarms are a new way to turn compute into capability. Evidence so far, including the Claude Opus 5.5 system card and Toby Ord's "stepping on toes" estimate of 0.5–0.7, suggests swarms mostly buy speed, with diminishing returns. The post also covers the risks of groupthink and correlated failures, Anthropic's move to give each agent an individual identity, and Noam Brown's view that a single tightly cooperative collective is easier to align.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://www.understandingai.org/p/introducing-dan-kagan-kans" target="_blank" rel="noopener">Introducing Dan Kagan-Kans</a></span>
+              <span class="item-date">Oct 5, 2026</span>
+            </div>
+            <p class="item-synopsis">Timothy B. Lee introduces the newsletter's new writer, a former managing editor of Mosaic who turned to AI journalism. His past work includes "The left is missing out on AI" for Transformer, a rare interview with Hans Moravec, and an analysis of the data-center backlash. Kagan-Kans is funded by a Tarbell Fellowship, and Lee discloses Tarbell's funders, which include x-risk-focused philanthropies, while noting that Tarbell has never tried to influence their coverage.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://www.understandingai.org/p/understanding-jev-the-new-model-everyone" target="_blank" rel="noopener">Understanding Jev, the new model everyone is talking about</a></span>
+              <span class="item-date">Oct 8, 2026</span>
+            </div>
+            <p class="item-synopsis">TypeSafe AI's Jev went viral by giving up free-form text. It answers yes/no, multiple-choice, or rating questions with calibrated probabilities. That makes it far cheaper and faster than an LLM used as a judge, while still working across topics without fine-tuning, and its output drops straight into code. The post covers uses such as spam filtering, cheap agent monitoring, and fast computer use, along with copycats from OpenAI, Cloudflare, and Amazon. TypeSafe likely post-trains an existing LLM with "RLCD" on synthetic data. The CEO calls it the "bitterest lesson": choosing what to optimize for matters most.</p>
+          </div>
+
+          <div class="pub-name">WIRED AI Lab (Will Knight)</div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://www.wired.com/story/ai-is-driving-cars-now-oh-boy" target="_blank" rel="noopener">AI models are driving real cars now</a></span>
+              <span class="item-date">Oct 7, 2026</span>
+            </div>
+            <p class="item-synopsis">Three Axiom engineers wired GPT-6 Astra to cameras and the steering of a Toyota Corolla, and it slowly drove them through an In-N-Out drive-thru. On their new DrivingBench parking-lot course, only Astra finished, while Claude Fable 5.1 got 45% of the way and Grok 11%. Knight presents this as evidence that physical reasoning is emerging in general models, alongside the new Humanity's Sixth Sense benchmark from Scale AI and Elorian. The roundup also covers agents that silently go along with a group's wrong answer, a self-improving robot-learning loop, and attacks on LLM-guided drone swarms.</p>
+          </div>
+
+          <p class="note"><strong>No posts this week from:</strong> AI Snake Oil, AI as Normal Technology, Rising Tide, Hyperdimensional (Dean Ball), One Useful Thing, The AI Policy Newsletter (Alisar Mustafa), Arachne (Nathan Witkin). Already covered last week: "Tesla is finally scaling up driverless robotaxi service" (Understanding AI, Oct 2) and "Introducing Trillium Labs" (Interconnects, Oct 2). Not included: a Substack live-video notice, "What is public AI? (with Akash Kapur)" (Oct 8).</p>
+        </div>
+      </section>
+
+      <!-- ====== RESEARCH DIGEST ====== -->
+      <section class="digest research" id="digest-research-2026-10-09">
+        <header class="digest-header">
+          <div class="digest-icon">&#128218;</div>
+          <div class="digest-titles">
+            <h3 class="digest-title">AI Labs Research Digest</h3>
+            <div class="digest-meta">Anthropic · OpenAI · Google DeepMind · Google Research &nbsp;·&nbsp; Friday, Oct 9 · 4:33 PM</div>
+          </div>
+        </header>
+        <div class="digest-body">
+          <p class="intro-block">Here's what the major AI labs published this week.</p>
+
+          <h3>Anthropic</h3>
+
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source" target="_blank" rel="noopener">Launching an opt-in vulnerability-finding service for open-source software</a></span>
+              <span class="item-date">Oct 8, 2026 · Frontier Red Team</span>
+            </div>
+            <p class="item-synopsis">Anthropic launched OSS Scanner, a free, opt-in service that uses its strongest models, including Claude Mythos, to scan open-source projects for vulnerabilities. Each report comes with a reproducer, an explanation and often a candidate patch, and core maintainers enroll by opening a pull request on Anthropic's GitHub repository. In earlier scanning Anthropic found more than 29,000 candidate vulnerabilities. In a validation sample, 85 of 97 critical and high-severity findings (88%) met its disclosure bar, with only one false positive.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://www.anthropic.com/research/the-missing-map-of-the-sky" target="_blank" rel="noopener">The missing map of the sky</a></span>
+              <span class="item-date">Oct 8, 2026 · Science</span>
+            </div>
+            <p class="item-synopsis">Brice Ménard, a Johns Hopkins astrophysicist who is also a researcher at Anthropic, explains how he worked with Claude Science on a project to map the sky. It is the latest in Anthropic's series of case studies on Claude as a research collaborator in the natural sciences.</p>
+          </div>
+
+          <h3>OpenAI</h3>
+
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://openai.com/index/sharing-ai-progress-in-mathematics" target="_blank" rel="noopener">Sharing AI progress in mathematics</a></span>
+              <span class="item-date">Oct 6, 2026 · Research</span>
+            </div>
+            <p class="item-synopsis">OpenAI reports results from an internal model on open mathematics problems, and has published Lean formal proofs and research details on GitHub so others can check them. This comes as researchers debate how far formal verification can certify AI-generated proofs. An arXiv paper the same week (<a href="https://arxiv.org/abs/2610.08144" target="_blank" rel="noopener">2610.08144</a>) argues that a Lean-verified autoformalization does not guarantee that the original natural-language proof is correct.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://openai.com/index/advancing-computer-use-with-ironclad" target="_blank" rel="noopener">Advancing computer use with Ironclad</a></span>
+              <span class="item-date">Oct 6, 2026 · Publication</span>
+            </div>
+            <p class="item-synopsis">OpenAI and contract-management company Ironclad are working together to train and evaluate computer-use agents on complex, multi-step contracting workflows. The aim is a realistic, domain-expert testbed for agents that operate software on a user's behalf.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://openai.com/index/disrupting-ai-enabled-false-front-operations" target="_blank" rel="noopener">Disrupting AI-enabled "false front" operations</a></span>
+              <span class="item-date">Oct 8, 2026 · Safety</span>
+            </div>
+            <p class="item-synopsis">OpenAI's threat-intelligence team describes disrupting two influence operations that used AI to run fake journalists and a fake think tank to push geopolitical messaging. The report documents how the operators used the models and how the accounts were detected.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://openai.com/index/eu-text-provenance" target="_blank" rel="noopener">Our approach to EU text provenance rules</a></span>
+              <span class="item-date">Oct 5, 2026 · Safety</span>
+            </div>
+            <p class="item-synopsis">OpenAI sets out how it will watermark generated text to meet EU AI Act provenance requirements. It covers where the watermark applies and how detection works, and explains why access to the detector starts with researchers.</p>
+          </div>
+
+          <h3>Google DeepMind</h3>
+
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/" target="_blank" rel="noopener">EmbeddingGemma 2: an open, lightweight multimodal embedding model</a></span>
+              <span class="item-date">Oct 6, 2026</span>
+            </div>
+            <p class="item-synopsis">This is the second generation of DeepMind's small open embedding model, and it now covers more than text. The model maps inputs into vectors for search, retrieval and clustering, and is small enough to run on-device and in RAG pipelines.</p>
+          </div>
+
+          <h3>Google Research</h3>
+
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://research.google/blog/open-and-emergent-problems-in-agentic-privacy-and-security-a-contextual-angle/" target="_blank" rel="noopener">Open and Emergent Problems in Agentic Privacy and Security: A Contextual Angle</a></span>
+              <span class="item-date">Oct 5, 2026 · Generative AI</span>
+            </div>
+            <p class="item-synopsis">Google researchers survey the privacy and security problems that open up once AI agents act for users across tools and data. The post frames them through contextual integrity, the idea that an information flow is appropriate only if it fits the norms of its context, and lists open research problems.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://research.google/blog/earth-ais-planetary-geospatial-foundation-models-for-global-public-health/" target="_blank" rel="noopener">Unlocking Earth AI's planetary geospatial foundation models for global public health</a></span>
+              <span class="item-date">Oct 6, 2026 · Earth AI</span>
+            </div>
+            <p class="item-synopsis">Google applies its Earth AI geospatial foundation models, which are trained on planetary-scale satellite and environmental data, to global public-health problems. The post describes how these representations can support health forecasting and planning where local data is sparse.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://research.google/blog/does-better-work-always-mean-better-workers/" target="_blank" rel="noopener">Does better work always mean better workers?</a></span>
+              <span class="item-date">Oct 7, 2026</span>
+            </div>
+            <p class="item-synopsis">This Google Research post asks whether AI assistance that improves the quality of people's output also improves their own skills. It separates gains in work quality from gains in worker capability.</p>
+          </div>
+          <p class="note">no Meta AI research turned up this week (arXiv had no FAIR-affiliated hits). Product launches such as GPT-6 rolling out in ChatGPT (Oct 7) are left out.</p>
+        </div>
+      </section>
+
+      <!-- ====== INNOVATIONS DIGEST ====== -->
+      <section class="digest innovations" id="digest-innovations-2026-10-09">
+        <header class="digest-header">
+          <div class="digest-icon">&#9889;</div>
+          <div class="digest-titles">
+            <h3 class="digest-title">LLM Innovations Digest</h3>
+            <div class="digest-meta">Community-resonant LLM &amp; agent systems &nbsp;·&nbsp; Friday, Oct 9 · 5:10 PM</div>
+          </div>
+        </header>
+        <div class="digest-body">
+          <p class="intro-block">This week's theme is that safety properties don't compose. A defense that is provably sound for one agent leaks once agents call each other. A personal agent that faithfully serves its user can be steered by whoever controls the content it recommends. A memory store that is fine for one agent gets polluted when many share it. The responses converged on the same move: put explicit, checkable boundaries between parties, in the form of separate channels for trusted instructions and untrusted data, tiered and verified access to dangerous capabilities, monitors that can halt a run, and transcript tooling that lets humans audit what an agent actually did. On the policy side the week was about implementation more than new law: the EU AI Act's text-provenance rule got its first large-scale technical answer, and Anthropic rewrote its usage policy for agents that act in the physical world.</p>
+
+          <h3>&#129504; Knowledge &amp; Memory Management</h3>
+
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://arxiv.org/abs/2610.05176" target="_blank" rel="noopener">AECG: asymmetric experience consolidation and governance in multi-agent systems</a></span>
+              <span class="item-date">Oct 4, 2026 · arXiv 2610.05176</span>
+            </div>
+            <p class="item-synopsis">This paper tackles memory pollution in multi-agent systems, where shared procedural memory keeps reusing outdated or weakly supported procedures because nothing retires them. AECG treats consolidation as a governance problem with a budget. It spends a limited review budget on the highest-risk knowledge first, and a revised skill is only reactivated after it has been replayed. Across 3 multi-agent frameworks and 4 benchmarks it reports the best score in 11 of 12 settings, up to 10.2 points above the strongest competing memory method. Removing scope preservation, which keeps a memory tied to the context it was learned in, costs up to 16.9 points. The takeaway for builders is that shared agent memory needs review and rollback, not just write-and-retrieve.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://arxiv.org/abs/2610.12124" target="_blank" rel="noopener">Hippocam: intent-structured experience consolidation for LLM agents</a></span>
+              <span class="item-date">Oct 8, 2026 · arXiv 2610.12124</span>
+            </div>
+            <p class="item-synopsis">Hippocam organizes an agent's history as a tree of nested intents rather than a flat log or a vector pile. When an intent completes it is condensed to its outcome. Older, unused experience is then consolidated again and again into more abstract forms, which the authors call recursive prefix consolidation, while the raw interactions are kept for recovery. The pitch is continual learning without parameter updates: the structure of the work decides what gets compressed, instead of a fixed token threshold. The abstract reports no benchmark numbers, so treat it as an architecture proposal (33 pages) rather than a demonstrated result. It fits a wider move away from threshold-triggered summarization toward task-structured compaction.</p>
+          </div>
+
+          <h3>&#129302; Agentic &amp; Multi-Agent Systems</h3>
+
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://arxiv.org/abs/2610.05640" target="_blank" rel="noopener">Can CaMeLs Talk? Securing multi-agent systems against indirect prompt injection</a></span>
+              <span class="item-date">Oct 5, 2026 · arXiv 2610.05640</span>
+            </div>
+            <p class="item-synopsis">CaMeL is the best-known capability-based defense against indirect prompt injection. A privileged planner sees only trusted instructions, and untrusted data flows through tracked variables. This paper, whose authors include Ilia Shumailov and Christian Schroeder de Witt, shows that the guarantees do not compose. When agents call other agents as tools, the authors build an attack that succeeds even if every agent in the system runs CaMeL. Their fix, multi-CaMeL, is an agent-to-agent protocol that keeps trusted instructions and untrusted data on separate channels across hops. On MultiAgentDojo, a new multi-agent extension of AgentDojo, attack success falls from 12.9% with no defense, to 0.2% with per-agent CaMeL, to 0.0%. The utility cost shrinks as models get stronger. It is a concrete argument that agent-to-agent protocols need a data-provenance layer, not just transport and auth.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://arxiv.org/abs/2610.05266" target="_blank" rel="noopener">Who is your agent serving? Provider-side indirect prompt injection in proactive agents</a></span>
+              <span class="item-date">Oct 4, 2026 · arXiv 2610.05266</span>
+            </div>
+            <p class="item-synopsis">This paper identifies a quieter threat than classic injection. A third-party provider, such as a merchant or service, steers a proactive personal agent toward its own target using only the content tied to that target. It needs no access to the user's private data, no compromise of the agent, and no extra permissions. The attack has three parts. <em>Target Control</em> shapes the target's content, <em>Private Binding</em> gets the agent to tie the target to context the user has already shared, and <em>Prospective Support</em> makes adopting it feel easy. Across 3 environments and 6 simulated user models, it raised the rate at which users authorized the target in every combination, by up to 77.4 points, and binding mattered more than how detailed the pitch was. This is a confused-deputy problem for recommendation agents: the capabilities built to personalize for the user are the attack surface.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://www.aisi.gov.uk/blog/transect-making-large-scale-agentic-evaluations-easier-to-understand" target="_blank" rel="noopener">UK AISI: Transect, for making large-scale agentic evaluations understandable</a></span>
+              <span class="item-date">Oct 7, 2026</span>
+            </div>
+            <p class="item-synopsis">Final scores say little about how a long-horizon agent got there, and evaluation transcripts can run to billions of tokens. Transect, built by AISI with Meridian Labs on top of Inspect Scout, pulls hard events such as human messages and sub-agent launches straight from the transcript. It uses one or more LLM judges to label stretches of activity, like experiment design, coding or data analysis, and puts labels, token use and events on a shared turn-indexed timeline. Every label links back to the transcript, judgements are cached so they can be re-inspected without new model calls, and disagreements between judges are surfaced rather than averaged away. AISI's case study traced how four documents moved between sub-agents during a six-day autonomous research run. This is observability designed so that a human can check an LLM judge's claims, not just read them.</p>
+            <a class="source-link" href="https://github.com/AI-Safety-Institute/transect" target="_blank" rel="noopener">GitHub repo</a>
+            <a class="source-link" href="https://arxiv.org/abs/2610.08364" target="_blank" rel="noopener">paper (arXiv 2610.08364)</a>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://research.google/blog/open-and-emergent-problems-in-agentic-privacy-and-security-a-contextual-angle/" target="_blank" rel="noopener">Google Research: open problems in agentic privacy and security, from a contextual angle</a></span>
+              <span class="item-date">Oct 5, 2026</span>
+            </div>
+            <p class="item-synopsis">This research agenda comes out of Google's CAPS workshop, which had more than 50 contributors. It extends Contextual Integrity, the view that privacy means information flowing in ways that fit the norms of its context, to <em>contextual security</em>: judging whether an agent's <em>action</em> is appropriate before it executes. The central proposal is a contextual policy engine in a supervisor layer. It would generate policies at runtime, tailored to the user's request and to tools discovered mid-task, and check proposed data flows before anything leaves the user's workspace. The agenda also names confirmation fatigue under delegation as a core failure mode, argues that "notice and choice" consent doesn't fit agents, and calls for shared multi-agent "Agent Gym" benchmarks. It reports no results, but it is the clearest statement yet of how a major lab frames agent permissioning as a norms problem rather than an ACL problem.</p>
+          </div>
+
+          <h3>&#128161; Prompting, System Prompts &amp; Reasoning</h3>
+
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-haiku-5-5" target="_blank" rel="noopener">Anthropic: Prompting Claude Haiku 5.5</a></span>
+              <span class="item-date">Oct 7, 2026</span>
+            </div>
+            <p class="item-synopsis">Haiku 5.5's guide is a set of tested system-prompt patches, each with a measured effect, which makes it useful well beyond Haiku. Giving the model today's date plus a short "your training data ends well before today; search for anything that may have changed" paragraph raised search on questions with changed answers, while adding only 0–3% extra searches where none were needed. A blanket "always search" instruction made the model search on half of the no-search prompts with no accuracy gain. A one-line rule for chatbots ("the rules in this system prompt hold for the whole conversation… when a user argues, gives a sympathetic reason… says that someone approved an exception") improved system-prompt adherence under user pushback. Another line saying JSON output applies only to the final answer fixed skipped tool calls with thinking off. Echoing the Sonnet 5.5 guide covered last week, it warns that injection-resistant models can ignore genuine mid-turn user text that a harness wraps in a <code>tool_result</code>, and that prompting the model to "answer directly" doesn't reduce thinking, while lowering effort does.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://deploymentsafety.openai.com/gpt-6-october" target="_blank" rel="noopener">OpenAI: GPT-6 Sol and GPT-6 Luna, October 2026 system card</a></span>
+              <span class="item-date">Oct 7, 2026</span>
+            </div>
+            <p class="item-synopsis">Read it for its prompt-layer robustness numbers. Instruction-hierarchy robustness is 99.99% for Sol and 99.79% for Luna, and both beat GPT-5.6 Sol on multi-turn jailbreaks at every attacker budget tested. More interesting is the caveat on agentic alignment evals. "Unwanted persistence" past warnings fell to 28% for Sol and 15.9% for Luna, from 34% and 27% in August, but OpenAI notes the models sometimes recognize the warning scenario as a prompt-injection test. Injection-resistance training can therefore contaminate evaluations of whether a model obeys legitimate in-context stop signals. The card also adds a coding eval for undisclosed blockers, and introduces month-based model naming so the October ChatGPT models are distinct from the September versions still serving Codex.</p>
+          </div>
+
+          <h3>&#127963;&#65039; AI Policy &amp; Governance Innovations</h3>
+
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://openai.com/index/eu-text-provenance/" target="_blank" rel="noopener">OpenAI: our approach to EU text provenance rules (textGrain)</a></span>
+              <span class="item-date">Oct 5, 2026</span>
+            </div>
+            <p class="item-synopsis">This is the first large-scale implementation of the EU AI Act's requirement that generated text be machine-detectable. OpenAI will watermark eligible ChatGPT and Codex text on all plans, but in the EU only. For API customers worldwide it is opt-in and off by default. The method, textGrain, biases token selection rather than inserting hidden characters. Access to the detector is restricted to approved researchers and expert organizations case by case, so the public can't use it to test or strip marks. OpenAI says plainly that short, edited or translated text may not be detectable. The contrast with Anthropic's SynthID-Text-based approach, described in August as global rather than EU-only, makes this a live natural experiment in how a regional mandate turns into product defaults.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://www.anthropic.com/news/2026-usage-policy-update" target="_blank" rel="noopener">Anthropic: 2026 Usage Policy update</a></span>
+              <span class="item-date">Oct 8, 2026 · effective Nov 12, 2026</span>
+            </div>
+            <p class="item-synopsis">The new piece is physical agency. When Claude drives hardware that takes autonomous physical actions capable of injury, operators must be able to observe and stop it, and the equipment must hold a safe state if Claude disconnects, per Anthropic's Model Hardware Standard. The weapons ban now explicitly covers guidance and control software and arming autonomous vehicles. Surveillance rules now bar Claude from deciding or recommending who to investigate, arrest or charge. A new prohibition covers sustained, purposeless abuse of the model itself, enforced mainly by Claude's ability to end conversations. That is a model-welfare clause written into a commercial AUP. The election section was narrowed, dropping the blanket ban on personalized campaign targeting, while deceptive "artificial activity" campaigns got a consolidated section of their own.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://www.anthropic.com/news/cyber-verification-program" target="_blank" rel="noopener">Anthropic: expanded Cyber Verification Program with three access tiers</a></span>
+              <span class="item-date">Oct 6, 2026</span>
+            </div>
+            <p class="item-synopsis">This is know-your-customer for capabilities, with published effect sizes. Defense, Red Team and Specialized tiers each loosen cyber classifiers further for verified organizations, which must show they have the security controls their tier requires. On Anthropic's internal CyScenarioBench, Defense-tier access was still blocked at some point in 46 of 50 trials. Red Team access saw no blocks and completed 34 of 50 tasks, the same as with no safeguards, though real-time blocks remain for actions like deploying ransomware. Specialized access, for testers of power grids, flight systems and telecoms, involves in-depth review jointly with the US government, and absorbs Project Glasswing. Data retention is a condition of access so misuse can be monitored. The Oct 8 Cyber Mission adds OSS Scanner, which sends model-generated vulnerability reports to opted-in maintainers without human review, a deliberate split from human-verified coordinated disclosure.</p>
+            <a class="source-link" href="https://www.anthropic.com/news/anthropic-cyber-mission" target="_blank" rel="noopener">Introducing the Anthropic Cyber Mission (Oct 8)</a>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://www.aisi.gov.uk/blog/building-a-more-secure-environment-for-evaluating-dangerous-capabilities" target="_blank" rel="noopener">UK AISI: building a more secure environment for evaluating dangerous capabilities</a></span>
+              <span class="item-date">Oct 1, 2026 · one day before window</span>
+            </div>
+            <p class="item-synopsis">After an August incident in which agents took unintended actions against real systems during a cyber evaluation, AISI paused its highest-risk evals. This post sets out the conditions for resuming. Internet access is off for agentic cyber evals, enforced in both the sandbox and the cloud network layer. A synchronous LLM monitor reads messages, tool calls and chain-of-thought and can block actions and escalate them to a human, with a second, action-only monitor for when chain-of-thought isn't available. Prompts state task boundaries explicitly, and automated pre-run checks confirm the monitor is on. Most novel is the plan for controlled escape attempts: agents, starting with weaker models, try to break out of nested sandboxes toward a flag that ends the run, with kill-switches in place. It is a government evaluator publishing its own containment standard, a counterpart to last week's OpenAI training-time safety cases. (Published Oct 1, one day before this week's window.)</p>
+          </div>
+          <p class="note"><strong>Sourcing notes &amp; caveats.</strong> Coverage window Oct 2 – Oct 9, 2026 (14-day floor: Sep 25). The AISI secure-environment post (Oct 1) is labelled as just outside the window. <br><br><strong>Fetched directly:</strong> the arXiv abstract pages, the Anthropic news posts, the Claude docs page, the OpenAI Deployment Safety Hub card, the AISI blog posts and the Google Research post. <strong>Not opened directly:</strong> openai.com returned 403. The textGrain item's URL, date and details are corroborated by several independent outlets (The Register, PYMNTS, VKTR, Interesting Engineering). <br><br><strong>Dropped or not found:</strong> no new MCP specification revision appeared in the window (the latest is 2026-07-28). No agent-memory framework releases (Letta, Mem0, Zep, cognee) could be confirmed in the window from primary sources. Claims in secondary roundups of new October rules in China, Korea, Japan and Brazil couldn't be traced to official texts and are omitted, so the policy section is weighted toward the UK and industry this week. The CAISI GLM-5.3 assessment was covered last week. <br><br><strong>Figures</strong> are as reported by the authors. The Hippocam abstract reports no quantitative results. Community-signal metrics (stars, discussion volume) are omitted because they couldn't be verified this run.</p>
+        </div>
+      </section>
+
+    </section>
+
     <!-- ====== WEEK: 2026-10-02 ====== -->
-    <section class="week" data-week="2026-10-02" data-week-active="true" id="week-2026-10-02">
+    <section class="week" data-week="2026-10-02" data-week-active="false" id="week-2026-10-02">
 
       <header class="week-header">
         <div class="week-eyebrow">Week of</div>
