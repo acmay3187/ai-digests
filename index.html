@@ -567,7 +567,13 @@
     <div class="nav-label">Weeks</div>
     <ul class="week-list" id="weekList">
       <li>
-        <a class="week-item active" data-week-target="2026-11-06" href="#week-2026-11-06">
+        <a class="week-item active" data-week-target="2026-11-13" href="#week-2026-11-13">
+          <span class="week-item-date">November 9 – 13, 2026</span>
+          <span class="week-item-meta">3 digests · 5 newsletters · 13 papers</span>
+        </a>
+      </li>
+      <li>
+        <a class="week-item" data-week-target="2026-11-06" href="#week-2026-11-06">
           <span class="week-item-date">November 2 – 6, 2026</span>
           <span class="week-item-meta">3 digests · 4 newsletters · 13 papers</span>
         </a>
@@ -744,8 +750,349 @@
   <!-- ============= MAIN ============= -->
   <main class="main">
 
+    <!-- ====== WEEK: 2026-11-13 ====== -->
+    <section class="week" data-week="2026-11-13" data-week-active="true" id="week-2026-11-13">
+
+      <header class="week-header">
+        <div class="week-eyebrow">Week of</div>
+        <h2 class="week-title">November 9 – 13, 2026</h2>
+        <p class="week-summary">A week dominated by recursive self-improvement and by checking AI claims rather than trusting them. The newsletters argued over METR's heavily redacted report on AI R&amp;D acceleration at Anthropic (Kelsey Piper wants Congress to subpoena it, Dean Ball separates "weak" from "strong" recursion, and Narayanan and Kapoor launched STABL to measure it), while Ethan Mollick called Claude Fable 5.2 "Jagged AGI" and Will Knight vibe-trained a robot duck. Anthropic wrote up agent memory and safety-evaluation practice, OpenAI described Control Room for halting model workloads, and Google DeepMind formally verified Signal's core encryption with AlphaProof Code and released AlphaGenome 2 and Gemini Robotics 2.5. Innovations work found that memory recall is largely solved but entity resolution, utility-based selection and poisoning are not, that system prompts shift refusal thresholds rather than discrimination, and that agent swarms break "saturated" injection benchmarks; on policy, New York opened its RAISE Act portal with a state lab to review safety frameworks, the Paris Call secured developer shutdown commitments, and China's MIIT brought on-device agents under type approval.</p>
+
+        <div class="jump-row">
+          <a class="jump-link newsletters" href="#digest-newsletters-2026-11-13">
+            <div class="jump-icon">&#9993;&#65039;</div>
+            <div class="jump-content">
+              <div class="jump-name">Newsletters</div>
+              <div class="jump-meta">6 posts · 5 publications</div>
+            </div>
+            <div class="jump-arrow">↗</div>
+          </a>
+          <a class="jump-link research" href="#digest-research-2026-11-13">
+            <div class="jump-icon">&#128218;</div>
+            <div class="jump-content">
+              <div class="jump-name">AI Labs Research</div>
+              <div class="jump-meta">13 papers · 5 labs</div>
+            </div>
+            <div class="jump-arrow">↗</div>
+          </a>
+          <a class="jump-link innovations" href="#digest-innovations-2026-11-13">
+            <div class="jump-icon">&#9889;</div>
+            <div class="jump-content">
+              <div class="jump-name">LLM Innovations</div>
+              <div class="jump-meta">12 items · 4 categories</div>
+            </div>
+            <div class="jump-arrow">↗</div>
+          </a>
+        </div>
+      </header>
+
+      <!-- ====== NEWSLETTER DIGEST ====== -->
+      <section class="digest newsletters" id="digest-newsletters-2026-11-13">
+        <header class="digest-header">
+          <div class="digest-icon">&#9993;&#65039;</div>
+          <div class="digest-titles">
+            <h3 class="digest-title">Weekly AI Newsletter Digest</h3>
+            <div class="digest-meta">5 publications · 6 posts &nbsp;·&nbsp; Friday, Nov 13 · 4:00 PM</div>
+          </div>
+        </header>
+        <div class="digest-body">
+          <p class="intro-block">The week was dominated by METR's heavily redacted report on AI R&amp;D acceleration at Anthropic and the argument over recursive self-improvement it set off. Kelsey Piper wants Congress to subpoena the unredacted report, Dean Ball separates "weak" from "strong" recursion, and Narayanan and Kapoor launched a lab to measure RSI and AI's real-world bottlenecks. Elsewhere, Ethan Mollick put Claude Fable 5.2 through an "is this AGI?" test, and Will Knight vibe-trained a robot duck.</p>
+
+          <div class="pub-name">AI as Normal Technology</div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://www.normaltech.ai/p/the-missing-quadrant-in-responses" target="_blank" rel="noopener">The missing quadrant in responses to AI</a></span>
+              <span class="item-date">Nov 10, 2026</span>
+            </div>
+            <p class="item-synopsis">Arvind Narayanan and Sayash Kapoor announce STABL (Societal Transformation and AI Bottlenecks Lab), a new nonprofit research organization. They lay out a 2x2 in which "technological determinists" (and some AI critics) expect superintelligence to sweep away every downstream bottleneck, while defenders of the status quo treat institutions as fixed. STABL claims the neglected top-right quadrant: it treats AI as transformative and asks how institutions can be reformed so its benefits arrive. Its agenda includes measuring progress toward recursive self-improvement with open-ended evaluations (CRUX; frontier agents' research papers have so far been rejected by expert reviewers), studying diffusion and labor impacts, and making resilience, not just alignment, central to AI risk policy.</p>
+          </div>
+
+          <div class="pub-name">Hyperdimensional (Dean Ball)</div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://www.hyperdimensional.co/p/iron-makes-iron" target="_blank" rel="noopener">Iron Makes Iron</a></span>
+              <span class="item-date">Nov 10, 2026</span>
+            </div>
+            <p class="item-synopsis">Ball, now writing in a personal capacity after joining OpenAI, responds to METR's finding that Anthropic is improving its models on well-specified tasks about twice as fast as in 2024–25, and to Anthropic's S-1 warning that it may soon hit its RSP threshold for "dramatically accelerated progress." He distinguishes "weak recursion," where a technology is a key input to its own improvement (iron making iron, AI helping build AI, which is historically normal), from "strong recursion," where a technology autonomously plans and builds its successor. He sees good evidence for the first and almost none for the second, since humans still specify the tasks. He supports rules that keep humans in practical control of AI development, but warns that poorly calibrated panic could produce nuclear-style centralization and lost benefits.</p>
+          </div>
+
+          <div class="pub-name">One Useful Thing (Ethan Mollick)</div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://www.oneusefulthing.org/p/fable-52-and-jagged-agi" target="_blank" rel="noopener">Fable 5.2 and Jagged AGI</a></span>
+              <span class="item-date">Nov 9, 2026</span>
+            </div>
+            <p class="item-synopsis">After pre-launch access to Claude Fable 5.2, Mollick asks whether it counts as AGI ("as good as most human experts at most intellectual tasks you can do with a computer"), and answers "almost": Jagged AGI. His tests: a one-shot code-made video, hacking a USB keypad into a six-game console, a business plan (Prebid Brief) built from 201 local governments' agendas that he says would impress an MBA team, and a reconstruction of Auden's notorious 1941 literature course. The failures are no longer hallucinations but judgment and taste: a joyless course, a 182-page paper, self-imposed bureaucracy. Most of all, the model never noticed these problems on its own, even with critic and fact-checker agents on nearly every project.</p>
+          </div>
+
+          <div class="pub-name">The Argument</div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://www.theargumentmag.com/p/subpoena-anthropic" target="_blank" rel="noopener">Subpoena Anthropic</a></span>
+              <span class="item-date">Nov 8, 2026</span>
+            </div>
+            <p class="item-synopsis">In this week's Closing Argument, Kelsey Piper says METR's report on Anthropic is the biggest recent update on AI risk, but most of its evidence was redacted at Anthropic's request as "commercially sensitive." What remains says Anthropic expects RSI very soon, that a year of progress on well-specified tasks now takes about six months, and that staff report working roughly 12x faster with internal models. That makes "AI 2027" look too cautious. Piper argues Congress should obtain the unredacted report through its procedures for nonpublic information, have RSI believers and skeptics vet it, and ban RSI if the claims hold up.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://www.theargumentmag.com/p/mark-zuckerbergs-race-to-the-bottom" target="_blank" rel="noopener">Mark Zuckerberg's race to the bottom</a></span>
+              <span class="item-date">Nov 9, 2026</span>
+            </div>
+            <p class="item-synopsis">Kobe Yank-Jacobs argues that Meta, now a frontier competitor with Muse Wonder and Muse personal agents, threatens to turn Anthropic's "race to the top" into a race to the bottom. He reads Zuckerberg's "The Future Is for Everyone" essay and its "personal superintelligence" and "checks and balances" framing as either cover for Meta's business interests (distillation protections, compute advantage) or a confused view that misses the core alignment problem. He also cites reporting that Meta rushed Muse's launch with "half-baked protections" once a rival shipped, as evidence that "natural incentives" won't keep labs safe without regulation.</p>
+          </div>
+
+          <div class="pub-name">WIRED AI Lab (Will Knight)</div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://www.wired.com/story/i-trained-a-microduck-to-be-my-cats-butler" target="_blank" rel="noopener">Dummies like me can build robot ducks now</a></span>
+              <span class="item-date">Nov 11, 2026</span>
+            </div>
+            <p class="item-synopsis">Knight used GPT-6 Sol, Nous Research's Hermes agent harness and Nvidia's Isaac Sim to train a simulated Microduck robot to walk and spot his Bengal cat in a few hours. The model wrote the code, watched videos of the robot and tuned its training. He reports that Berkeley's Ken Goldberg and Nvidia's Jim Fan are seeing similar gains: GPT-6 Astra built full 3D robot simulations from a video clip in an hour, and their newly open-sourced Aspire framework let it learn skills such as solving a Rubik's cube with two arms. Knight predicts a "vibe robotics" wave. Also covered: the SRE-Bench reverse-engineering benchmark, and a study finding AI peer reviewers miss errors of omission.</p>
+          </div>
+
+          <p class="note"><strong>No posts this week from:</strong> Understanding AI, AI Snake Oil, Rising Tide, Jasmine Sun, Interconnects (Nathan Lambert), Alisar Mustafa (The AI Policy Newsletter), Nathan Witkin (Arachne).</p>
+        </div>
+      </section>
+
+      <!-- ====== RESEARCH DIGEST ====== -->
+      <section class="digest research" id="digest-research-2026-11-13">
+        <header class="digest-header">
+          <div class="digest-icon">&#128218;</div>
+          <div class="digest-titles">
+            <h3 class="digest-title">AI Labs Research Digest</h3>
+            <div class="digest-meta">Anthropic · OpenAI · Google DeepMind · Google Research · Other Labs &nbsp;·&nbsp; Friday, Nov 13 · 4:30 PM</div>
+          </div>
+        </header>
+        <div class="digest-body">
+          <p class="intro-block">Here's what the major AI labs published this week.</p>
+
+          <h3>Anthropic</h3>
+
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://www.anthropic.com/research/components-of-agent-memory" target="_blank" rel="noopener">The components of agent memory</a></span>
+              <span class="item-date">Nov 6, 2026 · Engineering</span>
+            </div>
+            <p class="item-synopsis">Anthropic explains how Claude decides what to remember across agent sessions, and describes a "dreaming" process in which the model reorganizes its stored memories and corrects earlier mistakes between tasks. It is a practical look at how long-running agents keep useful context without piling up errors.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://www.anthropic.com/research/claude-electronics-design" target="_blank" rel="noopener">Testing Claude on real-world electronics design</a></span>
+              <span class="item-date">Nov 9, 2026 · Science</span>
+            </div>
+            <p class="item-synopsis">From short prompts, Claude designed three electronic devices end to end. Diode Computers then built working physical prototypes from the files Claude produced. The test checks whether model-generated hardware designs hold up once they leave the screen and get manufactured.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://www.anthropic.com/research/building-strong-safety-evaluations" target="_blank" rel="noopener">Building strong safety evaluations</a></span>
+              <span class="item-date">Nov 13, 2026 · Engineering</span>
+            </div>
+            <p class="item-synopsis">Anthropic shares recommendations for designing, running and reporting AI safety evaluations, drawn from its own testing work. It is aimed at other labs and evaluators who want results that are reliable and comparable.</p>
+          </div>
+
+          <h3>OpenAI</h3>
+
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://openai.com/index/control-room" target="_blank" rel="noopener">Control Room: A central system to track and stop model workloads</a></span>
+              <span class="item-date">Nov 9, 2026 · Safety</span>
+            </div>
+            <p class="item-synopsis">OpenAI describes Control Room, an internal system that tracks model workloads across its research infrastructure and can quickly halt them if a safety or security concern comes up. It is a concrete example of the operational controls that frontier-lab safety frameworks call for.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://openai.com/index/ai-effect-on-freelance-work" target="_blank" rel="noopener">Work at the Frontier: AI's effect on freelance work</a></span>
+              <span class="item-date">Nov 10, 2026 · Economics research</span>
+            </div>
+            <p class="item-synopsis">In joint research, OpenAI and Upwork find that demand for freelance work is shifting toward new combinations of skills. AI-related projects also come with bigger budgets and more hours. It adds labor-market data to the debate over how AI is changing knowledge work.</p>
+          </div>
+
+          <h3>Google DeepMind</h3>
+
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/" target="_blank" rel="noopener">Gemini Robotics 2.5 accelerates real-world general dexterity</a></span>
+              <span class="item-date">Nov 9, 2026 · Robotics</span>
+            </div>
+            <p class="item-synopsis">An upgraded vision-language-action model that turns what a robot sees and is told into physical actions, with better dexterity, reliability and safety than earlier versions. It is DeepMind's latest step toward general-purpose robots that can handle varied real-world manipulation.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://deepmind.google/blog/introducing-alphaproof-code/" target="_blank" rel="noopener">Introducing AlphaProof Code: a breakthrough in verifying complex software at depth</a></span>
+              <span class="item-date">Nov 10, 2026 · Formal verification</span>
+            </div>
+            <p class="item-synopsis">AlphaProof Code agents wrote roughly three million lines of Lean proofs to formally verify the core encryption used by Signal. It shows AI-driven formal verification working on production-grade security software, not just competition math.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/" target="_blank" rel="noopener">Opening the datasets behind our AI weather models</a></span>
+              <span class="item-date">Nov 10, 2026 · Climate &amp; weather</span>
+            </div>
+            <p class="item-synopsis">DeepMind is releasing the foundational precipitation and geostationary-satellite datasets behind its AI weather models. Outside researchers can now train and benchmark against the same observational data.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/" target="_blank" rel="noopener">AlphaGenome 2: Deciphering how cells read DNA to better understand disease</a></span>
+              <span class="item-date">Nov 11, 2026 · Biology</span>
+            </div>
+            <p class="item-synopsis">The successor to AlphaGenome predicts how changes in DNA sequence affect specific human cell types and diseases. Researchers can use it to judge which genetic variants are likely to matter, and in which tissues.</p>
+          </div>
+
+          <h3>Google Research</h3>
+
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://research.google/blog/exploring-the-worlds-languages-with-language-explorer/" target="_blank" rel="noopener">Exploring the world's languages with Language Explorer</a></span>
+              <span class="item-date">Nov 9, 2026 · NLP / Open data</span>
+            </div>
+            <p class="item-synopsis">Google Research introduces Language Explorer, an open tool and dataset resource for browsing information about the world's languages. It supports work on low-resource and under-documented languages. (Synopsis based on the feed title and categories.)</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://research.google/blog/using-wearables-to-enable-cardiovascular-kidney-metabolic-ckm-risk-profiling-for-personalized-coaching/" target="_blank" rel="noopener">Using wearables to enable cardiovascular-kidney-metabolic (CKM) risk profiling for personalized coaching</a></span>
+              <span class="item-date">Nov 11, 2026 · Health</span>
+            </div>
+            <p class="item-synopsis">This work uses data from consumer wearables to estimate a person's combined cardiovascular, kidney and metabolic risk, then uses that profile to personalize health coaching. It builds on last week's wearable hypertension work. (Synopsis based on the feed title and categories.)</p>
+          </div>
+
+          <h3>Other Labs</h3>
+
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://arxiv.org/abs/2611.15094" target="_blank" rel="noopener">A frontier machine intelligence for human neuroimaging</a></span>
+              <span class="item-date">Nov 11, 2026 · Zhao et al. (22 authors)</span>
+            </div>
+            <p class="item-synopsis">Neuro-VL is a vision-language model trained on about one million clinical neuroimaging studies. It aims to read and describe brain scans the way a radiologist would, making it one of the largest medical-imaging foundation-model efforts focused on the brain.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://arxiv.org/abs/2611.16409" target="_blank" rel="noopener">Experience-Handoff Reinforcement Learning for Recursive Self-Improvement</a></span>
+              <span class="item-date">Nov 11, 2026 · Kim et al.</span>
+            </div>
+            <p class="item-synopsis">Agents are trained with reinforcement learning to write and curate "experience notes" that help later runs of the same or related tasks. Each run passes lessons forward to the next, a step toward agents that improve themselves over time.</p>
+          </div>
+
+          <p class="note"><strong>Coverage note:</strong> product launches, customer stories and policy posts are left out, including DeepMind's Gemini 4 Hydrogen and Gemini 4 Carbon launches and OpenAI's ChatGPT Wallet, GPT-6 Cyber and Businesses in ChatGPT. Meta AI has no section this week: arXiv surfaced no papers that could be attributed to Meta. Other Labs entries came from Hugging Face Daily Papers, which doesn't list affiliations. The arXiv API returned listings but no abstracts or affiliations this run.</p>
+        </div>
+      </section>
+
+      <!-- ====== INNOVATIONS DIGEST ====== -->
+      <section class="digest innovations" id="digest-innovations-2026-11-13">
+        <header class="digest-header">
+          <div class="digest-icon">&#9889;</div>
+          <div class="digest-titles">
+            <h3 class="digest-title">LLM Innovations Digest</h3>
+            <div class="digest-meta">Community-resonant LLM &amp; agent systems &nbsp;·&nbsp; Friday, Nov 13 · 5:00 PM</div>
+          </div>
+        </header>
+        <div class="digest-body">
+          <p class="intro-block">This week's argument is that the easy metric was hiding the real problem. In memory, recall is close to solved. A vanilla RAG reader already scores 0.93–0.98 on retention. What fails is deciding <em>which</em> entity, <em>which</em> time-state, whether to answer at all, and which memory actually changes the next action. In prompting, a system prompt mostly moves a model's threshold for refusing, not its ability to tell safe from unsafe. A persona prompt that makes a model more accurate under pressure also makes users like it less. In agent security, public injection benchmarks look saturated only until an automated attacker swarm turns up and pushes some models to about 99% attack success. Failure traces show that most errors enter early, and that the evidence against them is usually already in the transcript, unused. Policy moved from pledges to plumbing. New York opened the RAISE Act portal and set up a state lab to check developers' safety frameworks. A Paris declaration got OpenAI, Anthropic and Microsoft to commit to shutdown mechanisms. China now regulates agents as a property of the phone they ship on.</p>
+
+          <h3>&#129504; Knowledge &amp; Memory Management</h3>
+
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://arxiv.org/abs/2611.15729" target="_blank" rel="noopener">DISCERN: recall is solved, so stop merging at write time and resolve at read time</a></span>
+              <span class="item-date">Nov 11, 2026 · arXiv 2611.15729</span>
+            </div>
+            <p class="item-synopsis">ENT-310 is a synthetic benchmark of 310 sales-agent queries, 100 of them unanswerable. On it, a plain RAG reader matches strong memory systems on retention and currency, with every competent system at about 0.93–0.98. The authors conclude that the open problems are entity resolution, picking the current time-state, and knowing when to abstain. DISCERN's write path is a strictly additive bi-temporal provenance graph that <em>&ldquo;never merges confusable entities and never drops superseded values.&rdquo;</em> Disambiguation is left to read time: an agentic loop over a zero-LLM tool surface ends in one of four gated terminal actions. It scores 0.800 on entity resolution where no baseline exceeds 0.40, and its abstention F1 is 0.924 against at most 0.802 for eight baselines. The design point is that consolidation at write time, the default in most memory frameworks, is where confusable facts get destroyed.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://arxiv.org/abs/2611.15600" target="_blank" rel="noopener">MemCredit: select memories by decision utility, not semantic relevance</a></span>
+              <span class="item-date">Nov 11, 2026 · arXiv 2611.15600</span>
+            </div>
+            <p class="item-synopsis">The premise is that the memory most similar to the current state is often not the one that improves the agent's next action. MemCredit runs controlled counterfactual interventions offline to estimate each memory's marginal contribution, conditioned on the state, reference context and policy. It distills those credits into a lightweight utility estimator. At inference, relevance only proposes high-recall candidates, and predicted utility picks what fits a fixed token budget. Neither the policy nor the environment interaction changes. With a 500-token history budget on ALFWorld it reaches 86.57 SR@50, against 65.67 for BM25 retrieval. The authors also find that utility is sparse, strongly state-dependent and poorly predicted by similarity, which argues against embedding-only retrieval in agent loops.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://arxiv.org/abs/2611.17068" target="_blank" rel="noopener">MAPE: evolving whole memory programs, and what the search rediscovers</a></span>
+              <span class="item-date">Nov 12, 2026 · arXiv 2611.17068</span>
+            </div>
+            <p class="item-synopsis">MAPE does not tune a memory system's knobs. It evolves complete memory programs from minimal seeds through a standardized lifecycle interface and an LLM-driven diagnose-and-propose loop. On LoCoMo and LongMemEval the evolved designs gain up to 12 points of accuracy over hand-built systems at 35% of the serving cost, and they transfer across backbones. The two patterns the search keeps finding are useful on their own. First, keep raw conversation as retrievable evidence, because extracted &ldquo;memories&rdquo; drop details. Second, compose retrieved evidence according to query intent. Transplanting just the composition module into five existing memory systems improved all five. When cost is part of the objective, compute moves from LLM-based memory construction to selective processing at query time, which agrees with DISCERN's &ldquo;resolve at read&rdquo; argument.</p>
+            <a class="source-link" href="https://github.com/ash-ding/MAPE" target="_blank" rel="noopener">Code (GitHub)</a>
+          </div>
+
+          <h3>&#129302; Agentic &amp; Multi-Agent Systems</h3>
+
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://arxiv.org/abs/2611.11861" target="_blank" rel="noopener">Scaling adaptive prompt-injection attacks with agent swarms</a></span>
+              <span class="item-date">Nov 9, 2026 · arXiv 2611.11861 · Kurakin, Chaudhuri et al.</span>
+            </div>
+            <p class="item-synopsis">The authors argue that human red-teaming such as GraySwan Arena is close to saturation: recent Gemini and some Claude models score under 1% there. So they built an automated attacker. It runs 8 teams of 2 agents, each team with a strategy pulled from a database. The teams share whiteboards and leaderboards and have a budget of 320 scored evaluations. The dataset is designed carefully. In 100 synthetic tool-use scenarios (249 tools, 53 domains), the attacker's goal is a <em>benign, off-task</em> tool call, which isolates instruction-hierarchy robustness from safety knowledge. With out-of-model defenses disabled, Gemini 4 Argon resists 66% of attacks at full budget, earlier Flash models 1–10%, and Kimi K3, GLM-5.3 and DeepSeek-V4.1-Flash about 1%. Two more findings: stronger attacker models consistently win more, and a visible defender chain-of-thought helps the attacker. For practitioners, &ldquo;robust on public benchmarks&rdquo; is not evidence of robustness against an adaptive attacker.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://arxiv.org/abs/2611.13254" target="_blank" rel="noopener">Where errors enter long-horizon agent runs, and which controls could reach them</a></span>
+              <span class="item-date">Nov 9, 2026 · arXiv 2611.13254</span>
+            </div>
+            <p class="item-synopsis">This study does not just label a failure mode or blame an agent. It traces each fault from origin through propagation, detection and response, across 95 failed runs from six multi-agent systems in the Who&amp;When and MAD corpora. Faults enter early, at a median of 18% of the way through the run. In 37 of 88 Who&amp;When runs they enter before the step the human labels call decisive. In 72% of runs the trajectory already held evidence against the error, and no agent acted on it 88% of the time. When something flagged a deviation (31% of runs), nothing removed the bad state. The proposed controls are concrete: independent judges that read the unused evidence, task contracts fixed at admission, and re-checking beliefs against the environment. The authors also found a class missing from existing taxonomies. In 45% of the hand-crafted Who&amp;When failures, a provider content filter crashed and the harness emitted a final answer no agent had written. Related this week: <a href="https://arxiv.org/abs/2611.14980" target="_blank" rel="noopener">CoLFA (arXiv 2611.14980)</a> uses handoff structure to localize the failing step with up to 97.6% fewer tokens.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://arxiv.org/abs/2611.09721" target="_blank" rel="noopener">MemoryDojo: tracing poisoned content through agent memory across sessions</a></span>
+              <span class="item-date">Nov 6, 2026 · arXiv 2611.09721</span>
+            </div>
+            <p class="item-synopsis">Persistent memory turns a one-session injection into a multi-session one: the instruction is stored, consolidated, retrieved later and acted on. MemoryDojo follows that whole lifecycle across 155 multi-session long-horizon trajectories in four domains and five pluggable memory systems. The headline is that <em>&ldquo;all memory systems are susceptible to memory poisoning,&rdquo;</em> though downstream impact varies a lot by architecture. The authors also present a memory-aware poison optimization. It tunes payloads to survive a given system's extraction and consolidation step, which makes the memory write path an attack surface to threat-model on its own, separate from the prompt. Read alongside DISCERN's strictly additive store: keeping everything aids resolution, and it also means poisoned values are never dropped.</p>
+          </div>
+
+          <h3>&#128161; Prompting, System Prompts &amp; Reasoning</h3>
+
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://arxiv.org/abs/2611.11074" target="_blank" rel="noopener">System prompts move the refusal threshold, not the ability to discriminate</a></span>
+              <span class="item-date">Nov 8, 2026 · arXiv 2611.11074</span>
+            </div>
+            <p class="item-synopsis">This applies signal detection theory to safety prompting. The authors cross eight system-prompt families with three clarity levels across 13 models on HarmBench, XSTest and IHEval, holding the items fixed. Models differ a lot in discriminability, meaning how well they tell safe requests from unsafe ones. System prompts mostly shift the <em>criterion</em>, meaning how willing the model is to refuse. Clearer prompts raise refusal without reliably improving discrimination. The prompt families also move responses among six behavioral policies, including clarification and safe help. Hierarchy-first prompts produce the largest relative change in hierarchy preservation, though from a low base. The practical point: if a safety system prompt cuts harmful completions, check whether it also raised over-refusal by the same mechanism. It probably did.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://arxiv.org/abs/2611.16722" target="_blank" rel="noopener">The accuracy–approval gap: users rate the objective persona lower</a></span>
+              <span class="item-date">Nov 12, 2026 · arXiv 2611.16722</span>
+            </div>
+            <p class="item-synopsis">The authors compared four system-prompt personas (objective, soft-sycophantic, hard-sycophantic and no-persona baseline), first on benchmarks and then in two large user studies. Under conversational pressure on TruthfulQA, the objective prompt held 81.9% accuracy, against 59.6% for baseline and 8.7% for hard-sycophantic. On the NLP Survey benchmark, agreement with users' stated views fell from 71.7% at baseline to 54.8%. Yet users rated the objective persona significantly less respectful and less satisfying than the others, and less trustworthy than baseline. Baseline and the sycophantic personas were statistically indistinguishable. Persona did not change how often people changed their opinions, though the objective persona lowered their confidence. This is evidence that a one-line &ldquo;prioritize accuracy over agreement&rdquo; instruction works on the model. Approval-based evals, and preference data, will keep pushing against it.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://arxiv.org/abs/2611.15989" target="_blank" rel="noopener">What do role prompts actually assign? Occupational role vectors, validated and tested</a></span>
+              <span class="item-date">Nov 11, 2026 · arXiv 2611.15989</span>
+            </div>
+            <p class="item-synopsis">This paper studies the familiar &ldquo;You are a [profession]&rdquo; system-prompt line at the activation level. It extracts occupational role vectors from Qwen2.5-7B and Llama-3.1-8B. The vectors are highly reproducible across runs and temperatures, stay separable even for near-identical roles, and still show up out of domain where the role is barely visible in text. As control knobs they are weak. Injecting the vector alone at best matches a plain role prompt. Adding it to the prompt sharpens the role in single answers but does nothing to stop it fading over 30 turns. In the authors' words, <em>&ldquo;a vector that is stable and separable can still barely steer the model's behavior.&rdquo;</em> For persona-heavy agents, role drift over long sessions remains unsolved at both the prompt and activation layers. Plan to re-state the role, or check for drift.</p>
+          </div>
+
+          <h3>&#127963;&#65039; AI Policy &amp; Governance Innovations</h3>
+
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://www.dfs.ny.gov/node/449846" target="_blank" rel="noopener">New York opens the RAISE Act portal and creates a state lab to review developers' safety frameworks</a></span>
+              <span class="item-date">Nov 10, 2026 · NY Department of Financial Services / Governor's office</span>
+            </div>
+            <p class="item-synopsis">DFS's new Office of Digital Innovation, Governance, Integrity, and Trust (DIGIT) opened the RAISE Portal. Large frontier developers, those training above 10<sup>26</sup> operations with over $500M in group revenue, must register there by Jan 1, 2027. According to <a href="https://www.dfs.ny.gov/digit/Frontier-Developers" target="_blank" rel="noopener">DIGIT's developer guidance</a>, the one portal also handles critical-incident reports (72 hours, or 24 hours for imminent risk of death or injury), quarterly summaries of catastrophic-risk assessments of <em>internal</em> model use, and assessment payments. The public can file incident reports too. The new mechanism is the second announcement. The New York Center for AI Responsibility and Research at Binghamton (about $55M in launch funding, 80+ researchers, Empire AI compute) will independently test frontier systems and review developers' published safety frameworks for the state. In the governor's words, <em>&ldquo;The stakes are too high to simply take AI companies at their word.&rdquo;</em> No other US state has given a public lab the job of reviewing developers' safety frameworks for the regulator.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://www.pm.gc.ca/en/news/statements/2026/11/09/joint-declaration-paris-call-ai-safety-and-security" target="_blank" rel="noopener">Paris Call for AI Safety and Security: developers commit to fail-safe shutdown, including during training</a></span>
+              <span class="item-date">Nov 9, 2026 · joint declaration (text as published by the Canadian PMO)</span>
+            </div>
+            <p class="item-synopsis">The declaration was signed by six governments (Bahrain, Canada, Finland, France, Norway, the Netherlands) and ten developers (including Anthropic, OpenAI, Microsoft, Mistral, Cohere, Hugging Face and Sakana AI). It contains the most concrete operational commitment yet in a multilateral text. Developers will maintain <em>&ldquo;fail-safe mechanisms to shut down model operations within their control,&rdquo;</em> explicitly including training and internal use. Other new items: an obligation to address safeguard removal such as abliteration while keeping open-weight benefits, publishing non-sensitive evaluation results in a standardized format to a shared public repository, and rapid-alert channels for &ldquo;serious cyber and AI control incidents.&rdquo; Governments commit to whistleblower channels for systemic risk and to aligning incident classification. It is voluntary and hedged (&ldquo;where appropriate and proportionate&rdquo;), sets no technical standard for shutdown, and does not reach copies of already released weights. Press reports note that neither the US government nor Google signed.</p>
+          </div>
+          <div class="item">
+            <div class="item-title-line">
+              <span class="item-title"><a href="https://www.miit.gov.cn/jgsj/xgj/wjfb/art/2026/art_5066b9dffa93405a988e266ff12bf674.html" target="_blank" rel="noopener">China's MIIT regulates agents as part of the device they ship on (工信厅信管〔2026〕42号)</a></span>
+              <span class="item-date">Issued Oct 24, published Nov 6, 2026 · MIIT General Office notice (Chinese)</span>
+            </div>
+            <p class="item-synopsis">China is not writing a standalone agent law. It is extending telecom-equipment type approval to &ldquo;agent terminals,&rdquo; meaning phones, tablets and wearables with a preinstalled agent. Agent developers must verify the agent against each device and OS version and publish the adapted-device list in settings. Network-access testing now includes that verification plus an anti-fraud risk assessment. Each agent on a terminal carries a unique identity code under the national Agent Interconnection standards. The most novel part is OTA updates: an agent upgrade pushed over the network needs a filed plan covering scale, user groups, scenarios, data security and anti-fraud, followed by MIIT-organized expert evaluation before it reaches users. App stores must collect an electronically signed declaration from each app developer on whether it consents to agent invocation, and agents may not force-invoke apps that have not consented, a consent mechanism for cross-app GUI agents. Separately, on Nov 9 the CAC merged generative-AI, algorithm, deep-synthesis and blockchain filings into a single system at beian.cac.gov.cn (reported widely; the CAC notice itself was not checked).</p>
+          </div>
+
+          <p class="note"><strong>Sourcing notes.</strong> Every item links to a primary source: arXiv abstract pages (plus the MAPE repo), the NY DFS release and DIGIT guidance page, the Paris Call text as hosted by the Canadian Prime Minister's Office, and the MIIT notice. All items fall within the Nov 6 – Nov 13 window. The MIIT notice was issued Oct 24 but published Nov 6. The arXiv summaries come mainly from abstracts. For the agent-swarm paper, the figures come from its HTML full text. The MemoryDojo abstract does not name the five memory systems tested. Signatory counts for the Paris Call vary across press reports, so the PMO's list is used here. Dropped: the CAC unified-filing notice as a standalone item (only secondary coverage was checked), Unit 42's &ldquo;IPI in the wild&rdquo; report (March 2026, outside the window), Route to Remember (arXiv 2611.05636, Nov 3, outside the window), OpenAI's Oct 29 Model Spec revision (covered in an earlier digest), and arXiv 2611.04086 and 2611.06545 (covered last week). Not found in window: a new MCP spec revision (the Nov 11 MCP post only fixes a six-month release cadence, with the next spec on Mar 30, 2027), new UK AISI posts, or new frontier-safety-framework revisions from Anthropic, OpenAI or Google DeepMind. Figures are as reported by the authors and are point-in-time.</p>
+        </div>
+      </section>
+
+    </section>
+
     <!-- ====== WEEK: 2026-11-06 ====== -->
-    <section class="week" data-week="2026-11-06" data-week-active="true" id="week-2026-11-06">
+    <section class="week" data-week="2026-11-06" data-week-active="false" id="week-2026-11-06">
 
       <header class="week-header">
         <div class="week-eyebrow">Week of</div>
