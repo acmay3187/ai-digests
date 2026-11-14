@@ -59,7 +59,7 @@ For each digest's HTML body (repo file or Gmail):
   - **Innovations:** grouped by the four current categories, in this order, each an `<h3>` with an HTML-entity emoji and the title:
     `<h3>&#129504; Knowledge &amp; Memory Management</h3>`, `<h3>&#129302; Agentic &amp; Multi-Agent Systems</h3>`, `<h3>&#128161; Prompting, System Prompts &amp; Reasoning</h3>`, `<h3>&#127963;&#65039; AI Policy &amp; Governance Innovations</h3>`. Omit a category with no items. If the source uses a different category, keep its title and encode its emoji as HTML entities. Never paste raw emoji; copy the entity codes from existing weeks as a reference.
 - Preserve any "newsletters with no posts" or "sourcing caveats" notes from the source as a `<p class="note">` at the end of the relevant digest.
-- Preserve any intro paragraph as a `<p class="intro-block">` at the top of the digest body.
+- Preserve any intro paragraph as a `<p class="intro-block">` at the top of the newsletters and research digest bodies. **Innovations gets no intro-block:** drop any intro or summary paragraph from the innovations source and start the digest body with the first category `<h3>`.
 
 ## Step 4 — Build the new week section
 
@@ -143,7 +143,6 @@ Construct exactly this structure (substitute `{{weekId}}`, `{{weekTitle}}`, cont
           </div>
         </header>
         <div class="digest-body">
-          <p class="intro-block">{{intro}}</p>
           {{<h3>Category</h3> + items per category}}
           {{optional .note for sourcing caveats}}
         </div>

@@ -84,7 +84,7 @@ Produce a well-structured **HTML email** with inline styles.
 
 **Body:**
 
-- **Intro paragraph** — 2–3 sentences naming the week's dominant theme or the connective tissue between items. Make an argument about the week, don't just announce that items follow.
+- **Header** — the H1 title and a one-line date/coverage line (e.g. `Week of Nov 9, 2026 (coverage Nov 6 – Nov 13)`). **No intro or summary paragraph.** Go straight from the date line to the first section. The reader doesn't read a summary, so don't write one.
 - **The four sections above**, as H2 headers, in the order given.
 - **Each item:**
   - **Bold title, linked to the primary source**
